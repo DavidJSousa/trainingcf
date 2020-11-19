@@ -15,7 +15,9 @@
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="40" y="85"/>
+      <upperLeftCorner x="100" y="105"/>
+    
+      <rectangleSize width="160"/>
     </shape>
   </shapes>
 </layout>
