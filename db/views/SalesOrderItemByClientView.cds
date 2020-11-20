@@ -1,5 +1,4 @@
 using {training.salesorder as salesorder} from '../schema/salesOrder';
-using {training.user as user} from '../schema/user';
 namespace training.views;
 
 define view SalesOrderItemByClientView as
