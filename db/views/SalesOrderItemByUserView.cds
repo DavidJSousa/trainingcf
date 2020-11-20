@@ -6,9 +6,9 @@ define view SalesOrderItemByUserView as
 
 select from salesorder.TblSalesOrderItem {
     ID,
-    salesorder.ID as ![salesorderId],
-    salesorder.status as ![salesOrderStatus],
-    salesorder.user.ID as ![userID],
-    salesorder.user.name as ![userName]
+    salesOrder.ID as ![salesorderId],
+    salesOrder.status as ![salesOrderStatus],
+    salesOrder.user.ID as ![userID],
+    salesOrder.user.name as ![userName]
 };
 
