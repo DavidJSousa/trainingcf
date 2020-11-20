@@ -7,17 +7,18 @@
     "private": true,
     "dependencies": {
         "@sap/cds": "^4",
-        "express": "^4",
-        "@sap/hana-client": "^2.4.177",
-        "@sap/cds-dk": "^3.2.0"
+        "@sap/cds-dk": "^3.2.0",
+        "@sap/hana-client": "^2.6.61",
+        "express": "^4"
     },
     "devDependencies": {
         "sqlite3": "^5"
     },
     "scripts": {
-        "start": "npm cds run",
+        "start": "cds run",
         "env": "cp ./default-env.json ./db/default-env.json && cp ./default-env.json ./srv/default-env.json",
-        "build": "cds build/all --clean"
+        "build": "cds build/all --clean",
+        "deploydb": "cds build && cd db && npm start"
     },
     "cds": {
         "build": {
