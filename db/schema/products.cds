@@ -1,8 +1,8 @@
-using {Base, temporal} from './commom';
+using {Base, withTemporal} from './commom';
 
 namespace training.products;
 
-entity TblProducts: Base, temporal {
+entity TblProducts: Base, withTemporal {
     name: String(100);
     manufacturer: String(50);
     salesPrice: Decimal;
